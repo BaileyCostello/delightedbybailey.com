@@ -1,11 +1,11 @@
 /* font *****************************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @font-face {
-	font-family: 'Montserrat', sans-serif;
-	src: url('/fonts/Montserrat-Regular.ttf');
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	src: url('/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
 }
-/************************************************************************/
+/**text**********************************************************************/
 
 html {
 	min-height: 100vh;
@@ -13,6 +13,10 @@ html {
 
 .text-align-center {
 	text-align: center;
+}
+
+.text-align-left {
+	text-align: left;
 }
 
 .landing-text {
@@ -30,9 +34,9 @@ html {
 }
 
 h1 {
-	font-family: Montserrat;
-	font-weight: 600;
-	font-size: 16pt;
+	font-family: Plus Jakarta Sans;
+	font-weight: 700;
+	font-size: 128px;
 	margin: 0;
 	padding-top: 0;
 }
@@ -54,58 +58,87 @@ h1 {
 }
 
 h2 {
-	font-family: Montserrat;
-	font-weight: 600;
-	font-size: 14pt;
+	font-family: Plus Jakarta Sans;
+	font-weight: 700;
+	font-size: 5em;
+	line-height: 120%;
 	margin: 0;
 	padding-top: 0;
 }
 
 h3 {
-	font-family: Montserrat;
+	font-family: Plus Jakarta Sans;
 	font-weight: 400;
-	font-size: 14pt;
+	font-size: 20px;
 	margin: 0;
 	padding-top: 0;
 }
 
 p, span, li {
-	font-family: Montserrat;
-	font-weight: 400;
-	font-size: 14pt;
+	font-family: Plus Jakarta Sans;
+	font-weight: 300;
+	font-size: 18px;
 	margin: 0;
 	padding-top: 0;
 }
 
 a {
-	font-family: Montserrat;
-	font-weight: 400;
-	font-size: 14pt;
+	font-family: Plus Jakarta Sans;
+	font-weight: 300;
+	font-size: 20px;
 	text-decoration: none;
 	color: #000000;
 }
 
 body {
-	background: linear-gradient(72.63deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 84.73%), #FFFFFF;
+	background: #FFFFFF;
 }
 
 .button {
-	font-family: Montserrat;
+	font-family: Plus Jakarta Sans;
 	font-weight: 500;
-	font-size: 14pt;
+	font-size: 20px;
 	text-decoration: none;
 }
 
 .button-ghost {
-	font-family: Montserrat;
+	font-family: Plus Jakarta Sans;
 	font-weight: 500;
-	font-size: 14pt;
+	font-size: 20px;
 	text-decoration: none;
+}
+
+/* colors */
+
+.text-primary {
+	color: #000000;
+}
+
+.text-secondary {
+	color: #282828;
+}
+
+.text-tertiary {
+	color: #727A7F;
 }
 
 /* responsive breakpoints & positioning *************************************/
 
 /*https://www.w3schools.com/html/html_responsive.asp*/
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 16px;
+	margin: 120px;
+
+}
+
+header {
+	padding: 40px 120px;
+}
+
+
 
 @media screen and (max-width: 100000px) {
 	* { /* cascades to screen sizes below */
@@ -114,6 +147,7 @@ body {
 
 	.row {
 		display: flex;
+		height: 100vh;
 	}
 
 	.row-section-break {
@@ -337,7 +371,7 @@ body {
 
 .dropdown {
 	border: none;
-	font-family: Montserrat;
+	font-family: Plus Jakarta Sans;
 	font-weight: 400;
 	font-size: 14pt;
 	text-decoration: none;
@@ -419,7 +453,7 @@ body {
 /*************************************************************/
 
 body {
-	margin: 0;
+
 }
 
 .button {
@@ -495,7 +529,7 @@ body {
   border-top: none;
   padding: 4px 0px 2px 0px;
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: 'Plus Jakarta Sans';
   max-width: 360px;
   background-color: rgba(255,255,255,0);
   text-align: center;
@@ -504,7 +538,7 @@ body {
 
 .text-area {
 	  font-size: 16px;
-    font-family: Montserrat;
+    font-family: Plus Jakarta Sans;
     padding: 8px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
