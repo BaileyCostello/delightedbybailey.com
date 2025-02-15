@@ -1,0 +1,80 @@
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
+<script type="text/javascript">
+
+	var docTitle = document.title;
+	
+	if(docTitle !== "Bailey Costello") {
+		document.getElementById('BaileyCostelloLogo').src='../assets/Bailey-Costello-Logo.png';
+		document.getElementById('linkedInIcon').src='../assets/LinkedInIconWhite.png';
+		document.getElementById('emailIcon').src='../assets/EmailIconWhite.png';
+	}
+
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function dropdownToggle() {
+	  document.getElementById("nav-dropdown").classList.toggle("show");
+	}
+
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropdown')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains("show")) {
+	        openDropdown.classList.remove("show");
+	      }
+	    }
+	  }
+	}
+	// Close the dropdown if the user clicks outside of it
+	function copyEmail() {
+		var copyText = document.getElementById("myInput");
+		copyText.select();
+		copyText.setSelectionRange(0, 99999);
+		document.execCommand("copy");
+		alert("Email address copied to clipboard: " + copyText.value);
+	}
+</script>
+
+<div style="z-index: 5; position: fixed; top: 0; width: 100%;">
+	<div id="header" style="height: 36px; width: 100%; float: left;"></div>
+	<div class="subtitle">
+		<a href="/" style="float: left; padding-left: 36px;">
+			<img id="BaileyCostelloLogo" src="assets/Bailey-Costello-Logo.png" alt="Bailey Costello" style="width: 86px; height: 50px;">
+		</a>
+
+		<!-- Navigation Bar for desktop and tablet screen sizes-->
+		<div class="navigation-bar">
+			<div style="float: right;">
+				<!--<a onClick="copyEmail()" style="max-width: 36px;">-->
+				<a id="contact" href="contact.html" style="max-width: 36px;">
+					<img id="emailIcon" class="navigation-item" style="min-width: 36px; min-height: 36px; max-height: 36px;" src="assets/EmailIconWhite.png" alt="Send me an Email">
+				</a>
+
+				<a href="https://www.linkedin.com/in/baileycostello/" target="_blank" rel="noopener noreferrer">
+					<img id="linkedInIcon" class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedInIconWhite.png" alt="Message me on LinkedIn">
+				</a>
+			</div>
+			<input type="text" value="bqacos@gmail.com" id="myInput" style="position: absolute; left: -1000px; top: -1000px;">
+			<div style="float: right; padding-top: 7px;">
+				<a id="home" href="/" class="navigation-item">Home</a>
+				<a id="myWork" href="work.html" class="navigation-item">My Work</a>
+				<a id="resume" href="assets/BCostelloResume.pdf" target="_blank" class="navigation-item">Resume</a>
+				<a id="about" href="about.html" class="navigation-item">About</a>
+			</div>
+		</div>
+		<!-- Navigation Menu for mobile screen sizes-->
+		<div class="navigation-menu">
+			<button onclick="dropdownToggle()" class="dropdown">Menu</button>
+			<div id="nav-dropdown" class="dropdown-content">
+				<a class="dropdown-item" href="work.html" style="padding: 20px 0 10px 20px;">My Work</a>
+				<a class="dropdown-item" href="assets/BCostelloResume.pdf" target="_blank">Resume</a>
+				<a class="dropdown-item" href="about.html">About</a>
+				<a class="dropdown-item" href="contact.html">Contact</a>
+				<a class="dropdown-item" href="https://www.linkedin.com/in/baileycostello/" target="_blank" rel="noopener noreferrer" style="padding: 10px 0 20px 20px;">LinkedIn</a>
+			</div>
+		</div>
+	</div>
+	<div id="header" style="height: 20px; width: 100%; float: left;"></div>
+</div>

@@ -1,0 +1,568 @@
+/* font *****************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url('/fonts/Montserrat-Regular.ttf');
+}
+/************************************************************************/
+
+html {
+	min-height: 100vh;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.landing-text {
+	font-weight: 400;
+	font-size: 1.25em;
+}
+
+.tag {
+	background-color: rgba(255,255,255,1);
+	padding: 4px 10px;
+	margin: 3px;
+	border-radius: 30px;
+	line-height: 36px;
+	white-space: pre;
+}
+
+h1 {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 16pt;
+	margin: 0;
+	padding-top: 0;
+}
+
+.page-title {
+	font-size:  24pt;
+}
+
+.title-container {
+	position: relative;
+	text-align: center;
+}
+
+.title-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 14pt;
+	margin: 0;
+	padding-top: 0;
+}
+
+h3 {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 14pt;
+	margin: 0;
+	padding-top: 0;
+}
+
+p, span, li {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 14pt;
+	margin: 0;
+	padding-top: 0;
+}
+
+a {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 14pt;
+	text-decoration: none;
+	color: #000000;
+}
+
+body {
+	background: linear-gradient(72.63deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 84.73%), #FFFFFF;
+}
+
+.button {
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+.button-ghost {
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+/* responsive breakpoints & positioning *************************************/
+
+/*https://www.w3schools.com/html/html_responsive.asp*/
+
+@media screen and (max-width: 100000px) {
+	* { /* cascades to screen sizes below */
+		box-sizing: border-box;
+	}
+
+	.row {
+		display: flex;
+	}
+
+	.row-section-break {
+		display: flex;
+		height: 12vh;
+	}
+
+	.row-section-break-bottom-page {
+		display: flex;
+		height: 14vh;
+	}
+
+	.one-column-content {
+		flex: 6;
+		padding: 1em;
+	}
+
+	.two-column-content {
+		flex: 3;
+		padding: 1em;
+	}
+
+	.column-margin {
+		flex: 2;
+		padding: 1em;
+	}
+
+	.navigation-bar {
+		float: right;
+		background-image: linear-gradient(270deg, #FF778F 0%, #4460FF 100%);
+		border-radius: 100px;
+		padding: 10px 24px 4px 24px;
+		margin-right: 36px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	.navigation-item {
+		color:  #FFFFFF;
+		font-weight: 400;
+		padding:  0px 16px;
+	}
+
+	.navigation-menu {
+		display: none;
+	}
+
+	.button-home {
+		display: none;
+	}
+
+	.landing-page-text {
+		top:  60%;
+	}
+
+/*******About Me********/
+
+.gradient-border-wrap-card {
+  border-radius: 16px;
+	background: linear-gradient(270deg, #FF778F 0%, #4460FF 100%);
+  padding: 2px 2px;
+ 	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+}
+
+.gradient-border-card {
+  color: #000000;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: 500px;
+  background:  linear-gradient(237.18deg, rgba(255, 119, 143, 0.16) 0%, rgba(68, 96, 255, 0.16) 100%), #FFFFFF;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-card-wrap-size {
+	max-width: 240px;
+ 	min-height: 296px;
+}
+
+.about-card-size {
+	min-height: 296px;
+}
+
+	.desktop-cards {
+		display: flex;
+	}
+
+	.mobile-cards {
+		display:  none;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1190px) {
+	.about-card-wrap-size {
+		min-height: 320px;
+	}
+
+	.about-card-size {
+		min-height: 320px;
+	}
+}
+
+@media screen and (max-width: 1110px) {
+}
+
+@media screen and (max-width: 990px) {
+  .one-column-content {
+		flex: 8;
+	}
+
+	.two-column-content {
+		flex: 8;
+	}
+
+	.column-margin {
+		flex: 1;
+	}
+
+	.about-card-wrap-size {
+		min-height: 300px;
+	}
+
+	.about-card-size {
+		min-height: 300px;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	.about-card-wrap-size {
+		min-height: 330px;
+	}
+
+	.about-card-size {
+		min-height: 330px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+ 	.about-card-wrap-size {
+		min-height: 396px;
+	}
+
+	.about-card-size {
+		min-height: 396px;
+	}
+}
+
+@media screen and (max-width: 764px) { /* The width is 100%, when the viewport is 750px or smaller */
+	.one-column-content {
+		flex: 10;
+	}
+
+	.two-column-content {
+		flex: 5;
+	}
+
+	.column-margin {
+		flex: 0;
+		padding: .5em;
+	}
+
+	.navigation-item {
+		display: none;
+	}
+
+	.navigation-bar {
+		display: none;
+	}
+
+	.navigation-menu {
+		float: right; 
+		padding-right: 8px;
+		position: relative;
+		display: inline-block;
+		border-radius:  100px;
+	}
+
+	.landing-page-text {
+		top: 20%;
+	}
+
+		/******* About Me ********/
+
+	.desktop-cards {
+		display: none;
+	}
+
+	.mobile-cards {
+		display:  flex;
+	}
+
+	.about-card-wrap-size {
+		min-height: 200px;
+ 		max-width: 300px;
+	}
+
+	.about-card-size {
+		min-height: 200px;
+ 		max-width: 300px;
+	}
+
+	.mobile-cards-column-margin {
+		flex: 6;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.button-home {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 500px) { /* The width is 100%, when the viewport is 750px or smaller */
+	/******* About Me ********/
+	.mobile-cards-column-margin {
+		flex: 2;
+	}
+}
+/*navigation****************************************************/
+
+.dropdown {
+	border: none;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 14pt;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-image: linear-gradient(270deg, #FF778F 0%, #4460FF 100%);
+	border-radius: 100px;
+	padding: 16px 24px 16px 24px;
+	margin-right: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 36px;
+  min-width: 210px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 4px;
+  text-align: left;
+  background-color: #FFFFFF;
+}
+
+.dropdown-item {
+	padding: 10px 20px;
+	display: block;
+}
+
+.dropdown:hover, .dropdown:focus {
+  background-image: linear-gradient(to right, rgba(255, 68, 102, 1), 
+	rgba(255, 214, 122, 1));
+}
+
+.dropdown a:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.show {
+	display: block;
+}
+
+/*****************************************************************/
+
+.vertical-center {
+	position: relative;
+	/* top: 50%; 50% of the container's height*/
+	-webkit-transform: translate(0, -50%); /*-50% of the height of the object*/
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.horizontal-center {
+	/* position: relative; */
+	left: 50%; /*50% of the container's width*/
+	-webkit-transform: translate(-50%, 0); /*-50% of the width of the object*/
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+
+.spacer {
+	background-color: #FFFFFF;
+	 height: 10vh; 
+	 width: 100%;
+}
+
+/*************************************************************/
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 8px 16px 8px 16px;
+   color: rgba(0, 0, 0, .7);
+   text-align: right;
+   font-size: 11pt;
+}
+
+/*************************************************************/
+
+body {
+	margin: 0;
+}
+
+.button {
+	color: #FFFFFF;
+	background-image: linear-gradient(270deg, #FF778F 0%, #4460FF 100%);
+	border-radius: 56px;
+	padding: 8px 30px;
+	border: 0px;
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+	background-image: linear-gradient(to right, rgba(255, 68, 102, 1), 
+	rgba(255, 214, 122, 1));
+}
+
+.button:focus {
+	outline-color: rgba(78, 128, 244, .5);
+	outline-width: 1px;
+}
+
+/* https://css-tricks.com/gradient-borders-in-css/ */
+.gradient-border-wrap {
+  border-radius: 56px;
+	background: linear-gradient(270deg, #FF778F 0%, #4460FF 100%);
+  padding: 8px 2px;
+ 	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+}
+
+.gradient-border {
+  background: linear-gradient(72.63deg, rgba(0, 0, 0, 0.09) -20%, rgba(0, 0, 0, 0) 120%), #FFFFFF;
+  color: #000000;
+  padding: 6px 0px;
+  border-radius: 56px;
+  font-weight: 500px;
+}
+
+.gradient-border-wrap:hover {
+	background: linear-gradient(to right, rgba(255, 68, 102, 1), 
+	rgba(255, 214, 122, 1));
+}
+
+.link {
+	color: #000000; 
+	text-decoration: underline;
+}
+
+.link-inverted {
+	color: #FFFFFF; 
+	text-decoration: underline;
+}
+
+.img {
+	width: 100%; 
+	border: 1px solid #D8D8D8; 
+	border-radius: 8px;
+}
+
+.img-center {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	width:  100%;
+}
+
+
+/******* contact form *********/
+.text-input {
+  border-bottom: solid .5px #919191;
+  border-radius: 1px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding: 4px 0px 2px 0px;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  max-width: 360px;
+  background-color: rgba(255,255,255,0);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-area {
+	  font-size: 16px;
+    font-family: Montserrat;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    border: solid 1px #919191;
+}
+
+/********** tooltip *************/
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  display: none;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover {
+	display: block;
+} */
+
+/*.scrollbar {  JS - how many sections are on this page, what section is it currently scrolled to?
+	width: 6px;
+	height: 50vh;
+	background-color: #000000;
+	border-radius: 50px;
+	left: 99%;
+	top: 25%;
+	position: fixed;
+}
+*/
+
+/* CSS animations https://www.w3schools.com/css/css3_animations.asp */
+
+@keyframes down-arrow {
+	0%		{top: 0px;}
+	20%		{top: 0px;}
+	25%		{top: 4px;}
+	30%		{top: 2px;}
+	35%		{top: 4px;}
+	40%		{top: 0px;}
+	100%	{top: 0px;}
+}
+
+.down-arrow {
+	padding: 8px;
+	position: relative;
+	animation-name: down-arrow;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-iteration-count: 4;
+	animation-timing-function: linear;
+}
