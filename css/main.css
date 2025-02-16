@@ -5,10 +5,130 @@
 	font-family: 'Plus Jakarta Sans', sans-serif;
 	src: url('/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
 }
-/**text**********************************************************************/
+/** sections *****************************************************/
 
 html {
 	min-height: 100vh;
+}
+
+
+body {
+	margin: 0px;
+	background: #FFFFFF;
+}
+
+/** elements *************************************************/
+
+button {
+	padding: 12px 16px;
+}
+
+.button-primary {
+	background-color: black;
+	color: #FFFFFF;
+	border-radius: 4px;
+	font-family: Plus Jakarta Sans;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+.button-tertiary {
+	background-color: inherit;
+	border-color: black;
+	color: black;
+	border-radius: 4px;
+	font-family: Plus Jakarta Sans;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+/* text styles *************************************************/
+
+h1 {
+	font-family: Plus Jakarta Sans;
+	font-weight: 700;
+	font-size: 128px;
+	margin: 0;
+	padding-top: 0;
+}
+
+h2 {
+	font-family: Plus Jakarta Sans;
+	font-weight: 700;
+	font-size: 5em;
+	line-height: 120%;
+	margin: 0;
+	padding-top: 0;
+}
+
+h3 {
+	font-family: Plus Jakarta Sans;
+	font-weight: 700;
+	font-size: 4em;
+	margin: 0;
+	padding-top: 0;
+}
+
+h5 {
+	font-family: Plus Jakarta Sans;
+	font-weight: 700;
+	font-size: 1.5em;
+  margin-block-start: .25em;
+  margin-block-end: .25em;
+}
+
+p, span, li {
+	font-family: Plus Jakarta Sans;
+	font-weight: 300;
+	font-size: 18px;
+	margin: 0;
+	padding-top: 0;
+}
+
+a {
+	font-family: Plus Jakarta Sans;
+	font-weight: 300;
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.text-overline {
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 16px;
+}
+
+
+/* colors ***************************************/
+.bg-grey {
+	background-color: #f8f8f8;
+}
+
+.text-primary {
+	color: #000000;
+}
+
+.text-secondary {
+	color: #282828;
+}
+
+.text-tertiary {
+	color: #727A7F;
+}
+
+.text-button {
+	font-family: Plus Jakarta Sans;
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.text-button-ghost {
+	font-family: Plus Jakarta Sans;
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
 }
 
 .text-align-center {
@@ -33,16 +153,21 @@ html {
 	white-space: pre;
 }
 
-h1 {
-	font-family: Plus Jakarta Sans;
-	font-weight: 700;
-	font-size: 128px;
-	margin: 0;
-	padding-top: 0;
+/* grid and spacing *************************************/
+
+
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 40px 16px;
+	padding: 120px;
 }
 
-.page-title {
-	font-size:  24pt;
+
+
+header {
+	padding: 40px 120px;
 }
 
 .title-container {
@@ -57,91 +182,12 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-h2 {
-	font-family: Plus Jakarta Sans;
-	font-weight: 700;
-	font-size: 5em;
-	line-height: 120%;
-	margin: 0;
-	padding-top: 0;
-}
 
-h3 {
-	font-family: Plus Jakarta Sans;
-	font-weight: 400;
-	font-size: 20px;
-	margin: 0;
-	padding-top: 0;
-}
-
-p, span, li {
-	font-family: Plus Jakarta Sans;
-	font-weight: 300;
-	font-size: 18px;
-	margin: 0;
-	padding-top: 0;
-}
-
-a {
-	font-family: Plus Jakarta Sans;
-	font-weight: 300;
-	font-size: 20px;
-	text-decoration: none;
-	color: #000000;
-}
-
-body {
-	background: #FFFFFF;
-}
-
-.button {
-	font-family: Plus Jakarta Sans;
-	font-weight: 500;
-	font-size: 20px;
-	text-decoration: none;
-}
-
-.button-ghost {
-	font-family: Plus Jakarta Sans;
-	font-weight: 500;
-	font-size: 20px;
-	text-decoration: none;
-}
-
-/* colors */
-
-.text-primary {
-	color: #000000;
-}
-
-.text-secondary {
-	color: #282828;
-}
-
-.text-tertiary {
-	color: #727A7F;
-}
-
-/* responsive breakpoints & positioning *************************************/
-
-/*https://www.w3schools.com/html/html_responsive.asp*/
-
-.grid {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	gap: 16px;
-	margin: 120px;
-
-}
-
-header {
-	padding: 40px 120px;
-}
-
-
+/* 
+/*https://www.w3schools.com/html/html_responsive.asp
 
 @media screen and (max-width: 100000px) {
-	* { /* cascades to screen sizes below */
+	* { /* cascades to screen sizes below
 		box-sizing: border-box;
 	}
 
@@ -200,7 +246,7 @@ header {
 
 	.landing-page-text {
 		top:  60%;
-	}
+	} */
 
 /*******About Me********/
 
