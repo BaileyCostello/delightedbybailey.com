@@ -14,7 +14,16 @@ html {
 
 body {
 	margin: 0px;
-	background: #FFFFFF;
+	background: #fff;
+}
+
+header {
+	background-color: #fff;
+}
+
+header nav {
+	grid-column: span 6;
+	justify-self: end;
 }
 
 /** elements *************************************************/
@@ -40,6 +49,10 @@ button {
 	font-family: Plus Jakarta Sans;
 	font-weight: 700;
 	font-size: 1em;
+}
+
+nav {
+	display:block;
 }
 
 /* text styles *************************************************/
@@ -91,6 +104,7 @@ a {
 	font-size: 20px;
 	text-decoration: none;
 	color: #000000;
+	padding: 0px 16px;
 }
 
 .text-overline {
