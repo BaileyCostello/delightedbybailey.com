@@ -26,6 +26,10 @@ header nav {
 	justify-self: end;
 }
 
+.preview-card {
+	padding: 16px;
+}
+
 /** elements *************************************************/
 
 button {
@@ -115,6 +119,12 @@ a {
 
 
 /* colors ***************************************/
+
+:root {
+  --gold: #E8D7C8;
+  --white: #ffffff;
+}
+
 .bg-grey {
 	background-color: #f8f8f8;
 }
@@ -159,12 +169,15 @@ a {
 }
 
 .tag {
-	background-color: rgba(255,255,255,1);
-	padding: 4px 10px;
-	margin: 3px;
-	border-radius: 30px;
-	line-height: 36px;
+	border-style: solid;
+	color: #5C3228;
+  border-width: 1px;
+	border-color: #E8D7C8;
+	padding: 4px 6px;
+	margin: 6px 6px;
+	border-radius: 4px;
 	white-space: pre;
+	font-size: 0.875em;
 }
 
 /* grid and spacing *************************************/
@@ -181,8 +194,7 @@ a {
 
 
 header {
-	padding: 40px 120px;
-}
+	padding: 40px 120px}
 
 .title-container {
 	position: relative;
