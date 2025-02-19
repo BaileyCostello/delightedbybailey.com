@@ -45,6 +45,16 @@ button {
 	font-size: 1em;
 }
 
+.button-secondary {
+	background-color: #E8D7C8;
+	color: #532015;
+	border-radius: 4px;
+	border-width: 0px;
+	font-family: Plus Jakarta Sans;
+	font-weight: 700;
+	font-size: 1em;
+}
+
 .button-tertiary {
 	background-color: inherit;
 	border-color: black;
@@ -174,7 +184,6 @@ a {
   border-width: 1px;
 	border-color: #E8D7C8;
 	padding: 4px 6px;
-	margin: 6px 6px;
 	border-radius: 4px;
 	white-space: pre;
 	font-size: 0.875em;
