@@ -217,6 +217,10 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.row {
+	display: flex;
+}
+
 
 /* 
 /*https://www.w3schools.com/html/html_responsive.asp
