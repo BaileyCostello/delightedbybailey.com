@@ -6,4 +6,7 @@
 
 <ul>
   <li>How to implement CSS grid layouts: https://www.youtube.com/watch?v=-IAypuhKgJs&ab_channel=NetNinja</li>
+  <li><code>align-items: center, start, end</code> and <code>align-self</code> for horizontal alignment</li>
+  <li><code>justify-items: center, start, end</code> and <code>justify-self</code> for vertical alignment</li>
+  <li>Side scroll JS: https://www.youtube.com/watch?v=yXnK8ND76z8&ab_channel=ConorBailey</li>
 </ul>
