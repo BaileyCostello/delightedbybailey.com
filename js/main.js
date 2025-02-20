@@ -3,6 +3,7 @@
 const stickySections = [...document.querySelectorAll('.sticky')]
 console.log(stickySections);
 
+/*
 let images = [
   'assets/CDG Preview Image.png',
   'assets/CDG Preview Image.png',
@@ -17,6 +18,7 @@ images.forEach(img => {
     section.querySelector('.scroll_section').appendChild(image)
   })
 })
+*/
 
 window.addEventListener('scroll', (e) => {
   for(let i = 0; i < stickySections.length; i++) {

@@ -46,7 +46,7 @@ section {
 }
 
 .sticky_parent {
-	height: 500vh;
+	height: 2096px;
 }
 
 .sticky {
@@ -61,19 +61,25 @@ section {
 	position: absolute;
 	top: 0;
 	height: 100%;
-	width: 500vw;
+	width: 2096px;
 	will-change: transform;
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 	align-items: center;
-	padding: 0 5vw;
+	padding: 0 0;
 }
-
+/*
 img {
 	width: 400px;
 	height: 80%;
 	object-fit: cover;
 	object-position: center;
+} */
+
+.side-scroll-card {
+	gap: 16px 16px;
+	height: 42vh;
+	align-items: end;
 }
 
 /** elements *************************************************/
