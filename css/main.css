@@ -30,6 +30,11 @@ header nav {
 	padding: 16px;
 }
 
+p {
+	padding-bottom: .5em;
+	line-height: 1.6;
+}
+
 /** elements *************************************************/
 
 button {
@@ -139,6 +144,10 @@ a {
 	background-color: #f8f8f8;
 }
 
+.bg-black {
+	background-color: #1C1C1C;
+}
+
 .text-primary {
 	color: #000000;
 }
@@ -150,6 +159,19 @@ a {
 .text-tertiary {
 	color: #727A7F;
 }
+
+.text-primary-black-bg {
+	color: #FFFFFF;
+}
+
+.text-secondary-black-bg {
+	color: #B8B8B8;
+}
+
+.text-tertiary-black-bg {
+
+}
+
 
 .text-button {
 	font-family: Plus Jakarta Sans;
