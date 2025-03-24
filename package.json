@@ -1,1 +1,1 @@
-``"predeploy": "npm run build && cp CNAME build/CNAME"
+"homepage": "https://baileycostello.github.io/delightedbybailey.com"
