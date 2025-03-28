@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>							<!-- makes mobile not zoomable -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="gtf-8">
+		<link rel="stylesheet" type="text/css" href="../css/main.css" media="screen"/>
+
+		<title>Maintenance Management Case Study</title>
+	</head>
+	
+	<!-- Load in Javascript -->
+	<script src="js/main.js" type="text/javascript"></script>
+	<script>
+		$(function() {
+			$("#header").load("header.html");
+		});
+
+		$(function() {
+			$("#footer").load("footer.html");
+		});
+	</script>
+
+	<body>
+		<div id="header" class="sticky"></div>
+		
+		<div class="grid bg-grey">
+			<div style="grid-column: span 12;">
+				<p class="text-overline text-tertiary">Redesign / Technical</p>
+				<h2 class="text-align-left landing-page-text">Maintenance Management App Overhaul</h2>
+				</br>
+				</br>
+				<p class="text-secondary">
+					We reinvented a bare-bones utility to manage work orders for technicians that perform maintenance in warehouses, hospitals, municipalities, and more.
+				</p>
+				<img src=""></img>
+			</div>
+		</div>
+
+		<div id="footer"></div>
+	</body>
+</html>
