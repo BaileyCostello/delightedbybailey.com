@@ -5,20 +5,15 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
 		<title>My Work</title>
 	</head>
-	
+
 	<script src="js/main.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(function() {
-			$("#header").load("header.html");
-		});
 
-		$(function() {
-			$("#footer").load("footer.html");
-		});
-	</script>
+
 	
 	<body>
+		<div id="header" class="sticky"></div>
+
 		<div class="grid">	
 			<h2 class="landing-page-text" style="grid-column: span 6;">My Work</h2>
 		</div>
@@ -75,4 +70,13 @@
 
 		<div id="footer"></div>
 	</body>
+		<script>
+		$(function() {
+			$("#header").load("header.html");
+		});
+
+		$(function() {
+			$("#footer").load("footer.html");
+		});
+	</script>
 </html>
