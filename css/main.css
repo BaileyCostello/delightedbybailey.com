@@ -35,6 +35,59 @@ p {
 	line-height: 1.6;
 }
 
+/** tabs *****************************************************/
+/* Style the tab */
+.tab {
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: 1px solid #7B7B7B;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 200px;
+  border-radius: 24px;
+  margin-right: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	 color: #6E5E39;
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #E8D7C8;
+  color: #6E5E39;
+  border: 1px solid #BBAA81;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 /** elements *************************************************/
 
 button {
@@ -162,6 +215,15 @@ a {
 
 .text-tertiary {
 	color: #727A7F;
+}
+
+.text-gold {
+	color: #615438;
+}
+
+.text-caption {
+	color: #282828;
+	font-size: 16px;
 }
 
 .text-primary-black-bg {
