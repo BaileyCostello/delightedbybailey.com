@@ -102,48 +102,84 @@
 			<!-- tabs -->
 			<div class="grid bg-grey" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px;">
 				<div class="tab" style="grid-column: span 12;">
-				  <button class="tablinks text-overline text-tertiary" onclick="openCity(event, 'London')" id="defaultOpen">Audience Analysis</button>
-				  <button class="tablinks text-overline text-tertiary" onclick="openCity(event, 'Paris')">Personas</button>
-				  <button class="tablinks text-overline text-tertiary" onclick="openCity(event, 'Tokyo')">User Flows</button>
-				  <button class="tablinks text-overline text-tertiary" onclick="openCity(event, 'Tokyo')">Wireframes</button>
+				  <button class="tablinks text-overline text-tertiary" onclick="openCity(event, 'AudienceAnalysis')" id="defaultOpen">Audience Analysis</button>
+				  <button class="tablinks text-overline text-tertiary" onclick="openCity(event, 'Personas')">Personas</button>
+				  <button class="tablinks text-overline text-tertiary" onclick="openCity(event, 'UserFlows')">User Flows</button>
+				  <button class="tablinks text-overline text-tertiary" onclick="openCity(event, 'Wireframes')">Wireframes</button>
 				</div>
 				<br/>
-				<div id="London" class="tabcontent">
-				  <h3>London</h3>
-				  <p>London is the capital city of England.</p>
-				</div>
-
-				<div id="Paris" class="tabcontent">
-				  <h3>Paris</h3>
-				  <p>Paris is the capital of France.</p> 
-				</div>
-
-				<div id="Tokyo" class="tabcontent">
-				  <h3>Tokyo</h3>
-				  <p>Tokyo is the capital of Japan.</p>
-				</div>
 			</div>
-
-
-			<div class="grid bg-grey" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px;">
-				<div style="grid-column: span 5;">
-					<p><span style="font-weight: 700;">Audience Analysis</span></p>
-					<br/>
-					<p>I designed the workshop to facilitate a high level group discussion around</p>
-					<ul>
-						<li>Identifying the primary users of the app</li>
-						<li>Asking 6 “right questions” to understand their usage, wants, needs and pain points.</li>
-					</ul>
-					<p class="text-caption">“Right questions are thought-provoking. They are rarely simple or easy to answer. They have many sides that need to be surfaced, and typically lead to more questions to expand on ideas.” 
+			
+			<div id="AudienceAnalysis" class="grid tabcontent bg-grey" style="padding-top: 0px; padding-right: 0px;">
+					<div style="grid-column: span 5; padding: 0px;">
+						<p><span style="font-weight: 700;">Audience Analysis</span></p>
 						<br/>
-					- Jennifer Blunt</p>
-				</div>
-				<div></div>
-				<div style="grid-column: span 6;">
-					<img src="../assets/Right Questions.png" style="width: 100%; overflow: hidden; justify-self: center; max-height: max-content;" alt="I followed the double diamond process. Discovery, exploring the problem. Wireframing, deciding what to fix. Testing, validating ideas. Deliver, refine the solution. ">
+						<p>I designed the workshop to facilitate a high level group discussion around</p>
+						<ul>
+							<li>Identifying the primary users of the app</li>
+							<li>Asking 6 “right questions” to understand their usage, wants, needs and pain points.</li>
+						</ul>
+						<p class="text-caption">“Right questions are thought-provoking. They are rarely simple or easy to answer. They have many sides that need to be surfaced, and typically lead to more questions to expand on ideas.” 
+							<br/>
+						- Jennifer Blunt</p>
+					</div>
+					<div style="grid-column: span 1;"></div>
+					<div style="grid-column: span 6;">
+						<img src="../assets/Right Questions.png" style="width: 100%; overflow: hidden; justify-self: center; max-height: max-content;" alt="Questions included: 'What do they need in order to do their job? When will they use the app, how often?' 'What challenges do they face when using the app' 'Conversely, how can we improve their experience?' 'What do they like about the application?' and 'How is their performance measured?'">
+					</div>
+			</div>
+
+			<div id="Personas" class="grid tabcontent bg-grey" style="padding-top: 0px; padding-right: 64px;">
+					<div style="grid-column: span 5; padding: 0px;">
+						<p><span style="font-weight: 700;">Personas</span></p>
+						<br/>
+						<p>
+							I used persona templates to dig into specific use cases, pain points, and the environment for the main users of the app.
+							<br/>
+							<br/>
+							Our primary persona represents old-school technicians, who might not use technology often and can be easily frustrated by tech.
+						</p>
+					</div>
+					<div></div>
+					<div style="grid-column: span 6;">
+						<img src="../assets/Personas.png" style="width: 100%; overflow: hidden; justify-self: center; max-height: max-content;" alt="'If one person doesn’t get on board with using the app, the entire team struggles to adopt it.' and 'Sometimes I spend 20-30 minutes trying to find a part.'">
+					</div>
+			</div>
+
+			<div id="UserFlows" class="grid tabcontent bg-grey" style="padding-top: 0px;">
+				<div style="grid-column: span 12; padding: 0px;">
+					<p><span style="font-weight: 700;">User Flows</span></p>
+					<br/>
+					<p>With over 90% of technician’s tasks being performed outside of the app, I mapped out multiple workflows which helped us design the architecture to conform to their processes. This also helped us fill in missing details, explore scenarios, and identify the most critical areas for improvement.</p>
+					<br/>
+					<img src="../assets/UserFlow.png" style="width: 100%; overflow: hidden; justify-self: center; max-height: max-content;" alt="I followed the double diamond process. Discovery, exploring the problem. Wireframing, deciding what to fix. Testing, validating ideas. Deliver, refine the solution. ">
 				</div>
 			</div>
 
+			<div id="Wireframes" class="grid tabcontent bg-grey" style="padding-top: 0px;">
+				<div style="grid-column: span 12; padding: 0px;">
+					<p><span style="font-weight: 700;">User Flows</span></p>
+					<br/>
+					<p>Used as a discussion tool to build mutual understanding of concepts, experiment with ideas, and shape the bones of the app.</p>
+					<br/>
+					<img src="../assets/Wireframes.png" style="width: 100%; overflow: hidden; justify-self: center; max-height: max-content;">
+				</div>
+			</div>
+
+			<!-- Management -------------------------------------------------------->
+			<div class="grid">
+				<div style="grid-column: span 12;">
+					<p class="text-overline text-tertiary">Management</p>
+				</div>
+				<div style="grid-column: span 12;">
+					<p>Two additional designers joined my team. I managed their work and deadlines while I lead presentations and the overall direction for the app. We collectively produced wireframes, a prototype for testing, A/B concepts for visual direction, and high fidelity designs for mobile and tablet.</p>
+				</div>
+				<img src="../assets/TeamSentiments.png" style="grid-column: span 12; width: 100%; overflow: hidden; justify-self: center; max-height: max-content;">
+				<div class="text-tertiary" style="grid-column: span 12; justify-self: center;">
+					<p>Positive sentiments from my team’s retrospective meeting.</p>
+				</div>
+
+			</div>
 
 		<div id="footer"></div>
 
